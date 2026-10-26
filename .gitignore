@@ -1,0 +1,22 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Private application data and backups
+data/
+backups/
+*.sql
+*.sql.gz
+*.dump
+
+# Local development files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

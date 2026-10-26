@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080c10">
+  <meta name="description" content="RootGrid is a personal engineering lab exploring Linux, networking, self-hosted infrastructure and automation.">
+  <title>RootGrid — Personal Engineering Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline"></div>
+
+  <header class="header">
+    <a class="brand" href="#home" aria-label="RootGrid home">
+      <span class="brand-mark">R<span>G</span></span>
+      <span>rootgrid<span class="brand-dot">.</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#infrastructure">Infrastructure</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-contact" href="#contact">Contact <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> PERSONAL ENGINEERING LAB</div>
+        <h1>Building systems.<br>Understanding <span>what's underneath.</span></h1>
+        <p class="hero-text">
+          An independent lab for experimenting with Linux, networking,
+          self-hosted infrastructure, automation and the systems that connect them.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span>↘</span></a>
+          <a class="button button-secondary" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="meta-symbol">⌘</span> LEARN BY BUILDING</span>
+          <span><span class="meta-symbol">⌁</span> DOCUMENT EVERYTHING</span>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Illustrative terminal window">
+        <div class="terminal-bar">
+          <div class="window-controls"><i></i><i></i><i></i></div>
+          <span>rootgrid — bash</span>
+          <span class="terminal-lock">⌑</span>
+        </div>
+        <div class="terminal-body">
+          <div><span class="term-muted"># a lab built to learn</span></div>
+          <p><span class="term-green">utsav@rootgrid</span>:<span class="term-blue">~</span>$ whoami</p>
+          <p class="term-output">engineer-in-progress</p>
+          <p><span class="term-green">utsav@rootgrid</span>:<span class="term-blue">~</span>$ cat mission.txt</p>
+          <p class="term-output">Build. Break. Understand.<br>Document. Improve. Repeat.</p>
+          <p><span class="term-green">utsav@rootgrid</span>:<span class="term-blue">~</span>$ ls projects/</p>
+          <p class="term-output">homelab/ &nbsp; cloud/ &nbsp; automation/</p>
+          <p><span class="term-green">utsav@rootgrid</span>:<span class="term-blue">~</span>$ <span class="cursor"></span></p>
+        </div>
+        <div class="terminal-footer"><span>LOCAL ENVIRONMENT</span><span>UTF-8 <b>●</b></span></div>
+      </div>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <section class="signal-strip" aria-label="Lab focus areas">
+      <span>01 / LINUX</span><span>02 / NETWORKING</span>
+      <span>03 / INFRASTRUCTURE</span><span>04 / AUTOMATION</span>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="section-label"><span>01</span> / THE APPROACH</div>
+      <div class="intro-content">
+        <h2>Curiosity is the starting point.<br><span>Practical systems are the outcome.</span></h2>
+        <p>
+          RootGrid is a hands-on engineering lab focused on learning by building
+          real systems. Each project is an opportunity to understand how infrastructure
+          works, how components interact, and how to make deployments more reliable.
+        </p>
+      </div>
+    </section>
+
+    <section class="section infrastructure" id="infrastructure">
+      <div class="section-label"><span>02</span> / THE LAB</div>
+      <div class="section-heading">
+        <h2>Infrastructure, <span>in progress.</span></h2>
+        <p>A small home lab. A growing set of capabilities.</p>
+      </div>
+      <div class="infra-grid">
+        <article class="infra-card">
+          <span class="card-index">SYS / 01</span>
+          <div class="card-icon">⌘</div>
+          <h3>Linux & Virtualisation</h3>
+          <p>Ubuntu Server, KVM/QEMU and isolated virtual machines for experimentation.</p>
+          <div class="tag-list"><span>Ubuntu</span><span>KVM</span><span>QEMU</span></div>
+        </article>
+        <article class="infra-card">
+          <span class="card-index">NET / 02</span>
+          <div class="card-icon">⌁</div>
+          <h3>Networking & Remote Access</h3>
+          <p>Virtual networks, private connectivity and secure remote administration.</p>
+          <div class="tag-list"><span>TCP/IP</span><span>Tailscale</span><span>Cloudflare</span></div>
+        </article>
+        <article class="infra-card">
+          <span class="card-index">OPS / 03</span>
+          <div class="card-icon">▤</div>
+          <h3>Self-hosted Services</h3>
+          <p>Learning how to operate personal services, persistent storage and containers.</p>
+          <div class="tag-list"><span>Docker</span><span>Nextcloud</span><span>Linux</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-label"><span>03</span> / SELECTED WORK</div>
+      <div class="section-heading">
+        <h2>Projects & <span>experiments.</span></h2>
+        <p>Built to learn. Documented to share.</p>
+      </div>
+      <div class="project-list">
+        <article class="project-row">
+          <div class="project-number">01</div>
+          <div class="project-main">
+            <div class="project-type">INFRASTRUCTURE / ACTIVE</div>
+            <h3>Personal Cloud</h3>
+            <p>A self-hosted file platform with persistent virtual storage, Docker services and remote access through Cloudflare Tunnel.</p>
+            <div class="tag-list"><span>Docker Compose</span><span>Nextcloud</span><span>PostgreSQL</span><span>Redis</span></div>
+          </div>
+          <a class="project-arrow" href="https://cloud.rootgrid.au" target="_blank" rel="noopener noreferrer" aria-label="Open personal cloud">↗</a>
+        </article>
+        <article class="project-row">
+          <div class="project-number">02</div>
+          <div class="project-main">
+            <div class="project-type">WEB / ACTIVE</div>
+            <h3>RootGrid Portfolio</h3>
+            <p>This website: a version-controlled engineering portfolio, hosted on a home lab and designed for future automated deployments.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>Git</span><span>Linux</span></div>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </article>
+        <article class="project-row">
+          <div class="project-number">03</div>
+          <div class="project-main">
+            <div class="project-type">AUTOMATION / PLANNED</div>
+            <h3>CI/CD Pipeline</h3>
+            <p>Build toward automated checks and deployment from GitHub, with a private Jenkins controller.</p>
+            <div class="tag-list"><span>Jenkins</span><span>GitHub</span><span>CI/CD</span></div>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section principles">
+      <div class="section-label"><span>04</span> / ENGINEERING PRINCIPLES</div>
+      <div class="principle-grid">
+        <div><span>01</span><h3>Understand the system</h3><p>Learn why it works, not just which commands to run.</p></div>
+        <div><span>02</span><h3>Automate the repeatable</h3><p>Turn reliable manual processes into reproducible workflows.</p></div>
+        <div><span>03</span><h3>Document the journey</h3><p>Capture decisions, failures and lessons alongside the results.</p></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-label"><span>05</span> / CONNECT</div>
+      <h2>Always building.<br><span>Always learning.</span></h2>
+      <p>Explore the code, follow the experiments, and see what comes next.</p>
+      <a class="button button-primary" href="https://github.com/" target="_blank" rel="noopener noreferrer">Find RootGrid on GitHub <span>↗</span></a>
+      <p class="contact-note">GitHub profile link will be personalised after the repository is connected.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">R<span>G</span></span><span>rootgrid<span class="brand-dot">.</span></span></a>
+    <span>INDEPENDENT ENGINEERING LAB</span>
+    <span>© <span id="year">2026</span> ROOTGRID</span>
+  </footer>
+</body>
+</html>
